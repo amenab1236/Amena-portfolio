@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== FONT AWESOME ===== -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Portfolio Personal Complete</title>
+  </head>
+  <body>
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="fas fa-chevron-up scrolltop__icon"></i>
+    </a>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Amena</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <span class="home__greeting">Hello, my name is</span>
+            <h1 class="home__name">Amena</h1>
+            <span class="home__profession">Web Developer in HTML, CSS, JS</span>
+            <a href="#portfolio" class="button button-light">See My Work</a>
+          </div>
+
+          <div class="home__social">
+            <!--<span class="home__social-name">signature</span>-->
+            <a
+              href="https://github.com/amenab1236?tab=repositories"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a
+              href="mailto:amena_bareek@hotmaiil.com?subject=Important!&body=Hi."
+              class="home__social-icon"
+              ><i class="fas fa-envelope-square"></i
+            ></a>
+          </div>
+
+          <div class="home__img">
+            <img src="./assets/img/me3.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+
+      <section class="about section bd-container" id="about">
+        <h2 class="section-title">About me</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__data bd-grid">
+            <p class="about__description">
+              <span>Hello, I'm Amena<br /></span>
+              I'm a web designer & front-end developer focused on crafting clean
+              and user-friendly experiences. I create responsive websites with a
+              whimsical twist! I enjoy learning new skills daily, and have
+              passion for web development.
+            </p>
+          </div>
+
+          <img src="./assets/img/about.svg" alt="" class="about__img" />
+        </div>
+      </section>
+
+      <!--===== skills =====-->
+      <div class="skills-bg">
+        <section class="qualification section bd-container" id="skills">
+          <h2 class="section-title section-title-light">Skills</h2>
+
+          <div class="qualification__container bd-grid">
+            <div class="qualification__content">
+              <div class="bd-grid">
+                <div class="qualification__data">
+                  <div class="qualification__box">
+                    <span class="qualification__work">HTML5</span>
+                  </div>
+                </div>
+
+                <div class="qualification__data">
+                  <div class="qualification__box">
+                    <span class="qualification__work">
+                      CSS/Sass/light Bootstrap
+                    </span>
+                  </div>
+                </div>
+
+                <div class="qualification__data">
+                  <div class="qualification__box">
+                    <span class="qualification__work">
+                      JavaScript DOM/jQuery/light ReactJS
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification__content">
+              <div class="bd-grid">
+                <div class="qualification__data">
+                  <div class="qualification__box">
+                    <span class="qualification__work">
+                      Responsive Web Design
+                    </span>
+                  </div>
+                </div>
+
+                <div class="qualification__data">
+                  <div class="qualification__box">
+                    <span class="qualification__work"> MySQL/SQL </span>
+                  </div>
+                </div>
+                <!--*****************-->
+                <div class="qualification__data">
+                  <div class="qualification__box">
+                    <span class="qualification__work"
+                      >Light Node.js/Express.js
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--===== PORTFOLIO =====-->
+      <section class="portfolio section bd-container" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="portfolio__nav">
+          <span class="portfolio__item active-portfolio" data-filter="all"
+            >All</span
+          >
+          <span class="portfolio__item" data-filter=".web">Website</span>
+
+          <span class="portfolio__item" data-filter=".app">App</span>
+        </div>
+
+        <div class="portfolio__container bd-grid">
+          <div class="portfolio__content mix web">
+            <a href="https://capturemoments.netlify.app/" target="_blank"
+              ><img src="assets/img/capture.png" alt="" class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">Web development</span>
+
+              <h2 class="portfolio__title">CaptureMoments</h2>
+              <a
+                href="https://capturemoments.netlify.app/"
+                class="button button-link"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/amenab1236/CaptureMoments.git"
+                class="button button-link"
+                target="_blank"
+                >Github Repo</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio__content mix web">
+            <a href="https://yummcake.netlify.app/" target="_blank"
+              ><img src="assets/img/cakes.png" alt="" class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">Web development</span>
+              <h2 class="portfolio__title">Yummy.Cakes</h2>
+              <a
+                href="https://yummycake.netlify.app/"
+                class="button button-link"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/amenab1236/Yummy-Cake-Store.git"
+                class="button button-link"
+                target="_blank"
+                >Github Repo</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio__content mix app">
+            <a href="#"
+              ><img src="assets/img/tip.png" alt="" class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">App</span>
+              <a href="#"><h2 class="portfolio__title">Tip calculator</h2></a>
+              <a
+                href="https://quicktipcalculator.netlify.app/"
+                class="button button-link"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/amenab1236/Javascript-Tip-Calculator.git"
+                class="button button-link"
+                target="_blank"
+                >Github Repo</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio__content mix app">
+            <a href="#"
+              ><img src="assets/img/keeper.png" alt="" class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">App</span>
+              <a href="#"><h2 class="portfolio__title">React Keeper App</h2></a>
+              <a
+                href="https://reactkeeperapp.netlify.app/"
+                class="button button-link"
+                >Live</a
+              >
+              <a
+                href="https://github.com/amenab1236/React-Keeper-App.git"
+                class="button button-link"
+                >Github Repo</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACTME =====-->
+
+      <section class="contact section bd-container" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form
+          action="https://formspree.io/f/mrgojvdj"
+          method="post"
+          class="contact__form"
+        >
+          <div class="contact__inputs">
+            <input
+              type="text"
+              name="Name"
+              placeholder="Name"
+              class="contact__input"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+              class="contact__input"
+              required
+            />
+          </div>
+
+          <textarea
+            name="Message"
+            id=""
+            cols="0"
+            rows="7"
+            placeholder="Message"
+            class="contact__input"
+          ></textarea>
+
+          <input
+            type="submit"
+            value="Send Message"
+            class="button contact__button"
+            required
+          />
+        </form>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <div class="footer__container bd-container">
+        <h1 class="footer__title">Amena</h1>
+        <p class="footer__description">
+          My name is Amena and this is my personal website, consult me here
+        </p>
+        <div class="footer__social">
+          <!--
+          <a href="#" class="footer__link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a> -->
+          <a href="#" class="footer__link"><i class="fab fa-github"></i></a>
+          <a
+            href="mailto:amena_bareek@hotmaiil.com?subject=Important!&body=Hi."
+            class="footer__link"
+            ><i class="far fa-envelope"></i
+          ></a>
+        </div>
+        <p class="footer__copy">&#169; 2021 Amena.</p>
+      </div>
+    </footer>
+
+    <!-- ===== MIXITUP FILTER ===== -->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
